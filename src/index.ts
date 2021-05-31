@@ -8,6 +8,9 @@ connectDB();
 app.use(express.urlencoded());
 app.use(express.json());
 
+// Define Routes
+app.use("/api/exhibition", require("./api/exhibition"));
+
 // error handler
 app.use(function (err, req, res, next) {
   // set locals, only providing error in development
