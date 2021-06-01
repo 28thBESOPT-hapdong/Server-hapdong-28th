@@ -11,7 +11,7 @@ app.use(express.json());
 // Define Routes
 app.use("/api/exhibition", require("./api/exhibition"));
 app.use("/api/project", require("./api/project"));
-
+app.use("/api/banner", require("./api/banner"));
 // error handler
 app.use(function (err, req, res, next) {
   // set locals, only providing error in development
