@@ -4,8 +4,8 @@ const returnCode = require('../library/returnCode');
 const router = Router();
 
 /**
- * @route GET /exhibit
- * @desc Get all exhbitions
+ * @route GET /banner
+ * @desc Get banner
  * @access Private
  */
 

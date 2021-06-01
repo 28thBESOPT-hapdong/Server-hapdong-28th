@@ -2,9 +2,14 @@ import mongoose from "mongoose";
 import { IBanner } from "../interfaces/IBanner";
 
 const BannerSchema = new mongoose.Schema({
+  id: {
+    type: Number,
+    required: true,
+    unique: true,
+  },
   image: {
     type: String,
-    required: true
+    required: true,
   },
   title: {
     type: String,
